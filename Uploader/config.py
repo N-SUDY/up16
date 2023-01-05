@@ -16,13 +16,13 @@ logging.getLogger("urllib3").setLevel(logging.WARNING)
 
 class Config:
     ACTIVE_DOWNLOADS = []
-    API_ID = int(os.environ.get("API_ID", "10412514"))
-    API_HASH = os.environ.get("API_HASH", "4d55a7064ad72adcfa8944f505453a8c")
-    AUTH_USERS =  [int(i) for i in os.environ.get("AUTH_USERS", "5467777513").split(" ")]
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "5751126237:AAF62IPKfPEAmi8gXlvb55fDCC-I4L4OFMQ")
-    DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://Haashim:Haashim@mfile0.t9hxg.mongodb.net/?retryWrites=true&w=majority")
+    API_ID = int(os.environ.get("API_ID", "15830858"))
+    API_HASH = os.environ.get("API_HASH", "2c015c994c57b312708fecc8a2a0f1a6")
+    AUTH_USERS =  [int(i) for i in os.environ.get("AUTH_USERS", "5468192421").split(" ")]
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "5833550185:AAFzUdwF-uiFxIVwzrVS7VepS5GH9tfv0Bk")
+    DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://aio:aio@aio.5z4gxok.mongodb.net/?retryWrites=true&w=majority")
     DOWNLOAD_LOCATION = "./DOWNLOADS"
-    UPDATE_CHANNEL = int(os.environ.get("UPDATE_CHANNEL", "-1001860535753"))
+    UPDATE_CHANNEL = int(os.environ.get("UPDATE_CHANNEL", "-1001523739263"))
     PROCESS_MAX_TIMEOUT = 3600
     RESTART_TIME = []
     TG_MAX_FILE_SIZE = 3980000000
@@ -30,7 +30,7 @@ class Config:
     TIME_GAP2 = {}
     timegap_message = {}
     
-    TRACE_CHANNEL = os.environ.get("DB_CHANNEL_ID", "-1001860535753")
+    TRACE_CHANNEL = os.environ.get("DB_CHANNEL_ID", "-1001523739263")
     last_edit = defaultdict(lambda: 0)
     SESSION_STRING = os.environ.get(
         "SESSION_STRING",
@@ -48,13 +48,13 @@ class Config:
     user = []
     Library = ['aria2', 'aiohttp']
     Extension = ['mp4', 'webm', 'mkv', 'all']
-    FORCE_SUB = os.environ.get("FORCE_SUB", "Nkbots") 
+    FORCE_SUB = os.environ.get("FORCE_SUB", "h2dts") 
     PORT = os.environ.get("PORT", "8080")
 
     DOWNLOAD_LOCATION = "./DOWNLOADS"
 
     # Update channel for Force Subscribe
-    UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "-1001215708095")
+    UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "-1001523739263")
     # Telegram maximum file upload size
     MAX_FILE_SIZE = 4194304000
     TG_MAX_FILE_SIZE = 4194304000
@@ -76,14 +76,14 @@ class Config:
     DEF_WATER_MARK_FILE = ""
    
   
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1001860535753"))
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1001860694129"))
     LOGGER = logging
-    OWNER_ID = int(os.environ.get("OWNER_ID", "5467777513"))
+    OWNER_ID = int(os.environ.get("OWNER_ID", "5468192421"))
     # Update channel for Force Subscribe
     
     TG_MIN_FILE_SIZE = 2097152000
-    BOT_USERNAME = os.environ.get("BOT_USERNAME", "NkUploaderBot")
-    PRO_USERS = list(set(int(x) for x in os.environ.get("PRO_USERS", "5467777513").split()))
+    BOT_USERNAME = os.environ.get("BOT_USERNAME", "AIOTest_VBot")
+    PRO_USERS = list(set(int(x) for x in os.environ.get("PRO_USERS", "5468192421").split()))
     PRO_USERS.append(OWNER_ID)
     BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", "False"))
     BYPASS = os.environ.get("BYPASS", "")
